@@ -173,7 +173,7 @@ try {
         </thead>
         <tbody>
         <?php if ($result): // Check to make shre you have a valid result object before iterating over it ?>
-            <?php while ($registrant = $result->fetchArray()): // Fetch the next record of the result ?>
+            <?php while ($registrant = $result->fetch()): // Fetch the next record of the result ?>
                 <tr>
                     <td><?php echo htmlentities($registrant['first']); // Always protect against HTML injection with htmlentities() ?>
                     <td><?php echo htmlentities($registrant['last']); // Always protect against HTML injection with htmlentities() ?>
