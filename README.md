@@ -20,8 +20,7 @@ This starter app is designed to show beginning PHP developers how to:
 
     * Use try/catch blocks to handle errors gracefully
     * Use nested try/catch blocks and trow statements to manage error reporting and logging in one place
-    * Display nondescript but easily trackable errors to the users to protect against displaying
- critical data in error messages.
+    * Display nondescript but easily trackable errors to the users to protect against displaying critical data in error messages.
     * Log better information for tracking bugs that create errors
 
 * Use the built in PHP web server to test their applications locally without having to install a web server.
@@ -39,13 +38,9 @@ Run the built in PHP web server by executing the following command in a shell fr
 
     php -S localhost:8080
 
-Or on Windows
+If the PHP executable cannot be found in the path, the command will need to preceded with the correct path.  A windows example:
 
-    php.exe -S localhost:8080
-
-If the PHP executable cannot be found in the path, the command will need to preceded with the correct path.  For example:
-
-    C:\php\php.exe -S localhost:8080
+    C:\php\php -S localhost:8080
 
 Alternate addresses or ports can be used if necessary.  Refer to
 [the PHP documentation](http://www.php.net/manual/en/features.commandline.webserver.php) for more information on
