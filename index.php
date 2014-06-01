@@ -52,16 +52,14 @@ try {
             // If the required field is empty add an error
             $errors[] = 'First is required to register';
         } else {
-            // Use urldecode() as POST data is URL encoded @see http://en.wikipedia.org/wiki/POST_(HTTP)#Use_for_submitting_web_forms
-            $first = urldecode($_POST['first']);
+            $first = $_POST['first'];
         }
 
         if (empty($_POST['last'])) {
             // If the required field is empty add an error
             $errors[] = 'Last is required to register';
         } else {
-            // Use urldecode() as POST data is URL encoded @see http://en.wikipedia.org/wiki/POST_(HTTP)#Use_for_submitting_web_forms
-            $last = urldecode($_POST['last']);
+            $last = $_POST['last'];
         }
         $timestamp = time();
 
